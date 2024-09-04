@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+    #fdiv{
+        border: solid;
+        width: 300px;
+        margin-left: 300px;
+        padding: 3px;
+        background-color: rgb(149, 212, 212);
+
+    }
+    </style>
+</head>
+<body>
+    <h1>Get Data</h1>
+  <div id="fdiv">
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address"><br><br>
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">Gender
+        <option value="male" id="male" name="gender" >male</option>
+        <option value="female"id="female" name="gender" >female</option>
+    </select>
+    <br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <button id="clearCookies">Clear Cookies</button>
+  </div>
+
+      <script src="script.js"></script>
+</body>
+</html>

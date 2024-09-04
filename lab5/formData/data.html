@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data</title>
+<style>
+    #first{
+   background-color: beige;
+   background-size: cover;
+   width: 100%; 
+   height: 800px;
+   justify-content: center;
+   background-position: center;
+   align-items: center;
+   text-align: center;
+   background-repeat: no-repeat;
+}
+
+#header{
+    width: 40%;
+    justify-items: center;
+    margin-left: 480px;
+    
+}
+
+
+#divForm{
+    width: 30%;
+    border: 2px solid;
+    margin-left: 560px;
+}
+form{
+    padding: 6px;
+    /* background-color: rgb(164, 194, 223); */
+}
+
+label{
+    font-size: 18px;
+    padding: 5px;
+
+}
+#name{
+margin-left: 80px;
+background-color: azure;
+}
+#age{
+    margin-left: 132px;
+    background-color: azure;
+
+} 
+#email{
+    align-items: center;
+    margin-left: 106px;
+    background-color: azure;
+    
+    color: rgb(66, 66, 122);
+}
+#add,#del1{
+    width: 230px;
+    align-items: center;
+    margin-left: 30px;
+    margin-bottom: 2px;
+    color: aliceblue;
+    background-color: rgb(33, 28, 108);
+    border:  1pxsolid black;
+    border-radius: 7px;
+}
+#exit{
+    width: 100px;
+    color: aliceblue;
+    background-color: rgb(33, 28, 108);
+    border:  1pxsolid black;
+    border-radius: 7px;
+}
+#h1{
+    width: 40%;
+    justify-items: center;
+    margin-left: 500px;
+}
+h1{
+    
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid rgb(187, 187, 236);
+    border-radius: 30px;
+    background-color: rgb(27, 27, 119);
+    color: rgb(238, 242, 245);
+}
+#table{
+    padding: 5px;
+    width: 65%;
+    border: 3px solid;
+    margin-left: 300px;
+    /* background-color: rgb(142, 171, 196); */
+}
+tr{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+</style>
+
+
+</head>
+<body>
+  
+ <div id="first">
+    <div id="header">
+        <h1>Register</h1>
+    </div>
+    <hr>
+
+    <div id="divForm">
+        <form action="" method="get" id="user-form">
+            <label for="name" >User Name: </label>
+            <input type="text" id="name" placeholder=" Enter your Name">
+            <br>
+            <br>
+    
+            <label for="age">Age: </label>
+            <input type="number" id="age" placeholder=" Enter your Age">
+            <br>
+            <br>
+    
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder=" Enter your email">
+            <br>
+           <br>
+            <button value="add" id="add">Add User</button>
+            <br>
+            
+            <button value="delete" id="del1">Delete</button>
+            <br>
+            <button type="button" id="exit" onclick="window.close()"><i class="fa-solid fa-right-from-bracket">Exit</i></button>
+            
+        </form>
+    </div>
+        <hr>
+    <div id="h1">
+        <h1>Table Data</h1>
+    </div>
+        <br>
+      <div id="table">
+        <table width="100%" id="user-table">
+           <thead>
+            <tr  width="100%" >
+                <td width="30%" align="center" >Name</td>
+                <td width="30%" align="center" >Age</td>
+                <td width="40%" align="center" >email</td>
+                
+            </tr>
+           </thead>
+           <tbody id="user-tbody">
+
+           </tbody>
+        </table>
+      </div>
+      <br>
+        
+ </div>
+
+    <script src="data.js"></script>
+</body>
+</html>
